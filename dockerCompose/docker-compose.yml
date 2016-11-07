@@ -1,0 +1,25 @@
+version: '2'
+services:
+  money:
+    build:
+      context: ./money
+      dockerfile: moneyApp
+    depends_on:
+      - postgresql
+    links:
+      - postgresql
+    ports:
+    - "4567:4567"
+    volumes:
+    - ./money:/opt/app/
+    - /var/log/moneyApp:/opt/app/log/
+  postgresql:
+    build:
+      context: ./postgre
+      dockerfile: postgre
+    ports:
+    - "5430:5432"
+    volumes:
+    - ./postgre/conf/:/etc/postgresql/
+    - ./postgre/log:/var/log/postgresql/
+    - ./postgre/databases:/var/lib/postgresql/
