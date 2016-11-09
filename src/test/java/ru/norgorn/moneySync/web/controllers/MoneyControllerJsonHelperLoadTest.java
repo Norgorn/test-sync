@@ -7,8 +7,6 @@ import java.io.IOException;
 import org.junit.Test;
 import org.mockito.internal.matchers.apachecommons.ReflectionEquals;
 
-import ru.norgorn.moneySync.web.requestHandler.impl.PlayerMoneyDTO;
-
 public class MoneyControllerJsonHelperLoadTest {
 
 	@Test

@@ -13,7 +13,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 
 import ru.norgorn.moneySync.persistence.entity.Money;
-import ru.norgorn.moneySync.web.requestHandler.impl.PlayerMoneyDTO;
 
 public class MoneyControllerJsonHelper {
 	static final Pattern COUNTRY_PATTERN = Pattern.compile("country");

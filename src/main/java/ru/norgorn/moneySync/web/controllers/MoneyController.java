@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 
 import ru.norgorn.moneySync.persistence.entity.Money;
 import ru.norgorn.moneySync.service.MoneySyncService;
-import ru.norgorn.moneySync.web.requestHandler.impl.PlayerMoneyDTO;
 import spark.Request;
 import spark.Response;
 

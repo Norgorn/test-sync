@@ -8,8 +8,6 @@ import org.junit.Test;
 import org.mockito.internal.matchers.apachecommons.ReflectionEquals;
 import org.skyscreamer.jsonassert.JSONAssert;
 
-import ru.norgorn.moneySync.web.requestHandler.impl.PlayerMoneyDTO;
-
 public class MoneyControllerJsonHelperTest {
 
 	@Test
